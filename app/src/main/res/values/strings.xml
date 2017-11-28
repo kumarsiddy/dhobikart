@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Dhobi Cart</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_email">Email/Phone No</string>
+    <string name="hint_pass">Password</string>
+    <string name="emailinputview_hint">Email</string>
+    <string name="emailinputview_invalid_error">Invalid Email</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="openDrawer">drawer opened</string>
+    <string name="closeDrawer">drawer closed</string>
+    <string name="action_cart">Cart</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="preference_file_key">com.freakydevs.dhobikart.LOG_FILE</string>
+    <string name="saved_name">name</string>
+    <string name="saved_email">email</string>
+    <string name="haveLoggedIn">bool</string>
+    <string name="gender">gender</string>
+    <string name="payable">Payable Amount</string>
+    <string name="continuee">Continue</string>
+    <string name="cross">✕</string>
+    <string name="equal">=</string>
+    <string name="empty_cart">Your Washing Cart is Empty!!</string>
+    <string name="additemtocart">Please add some items to cart!!</string>
+    <string name="error">Please provide the necessary details.</string>
+    <string name="no_address">No address found !!Please add an address...</string>
+    <string name="confirmaddress">PICK UP ADDRESS</string>
+    <string name="ordersummary">ORDER SUMMARY</string>
+    <string name="payment">SELECT PAYMENT</string>
+    <string name="note">Minimum Order must be of Rs.50.</string>
+    <string name="no_order">No Order has been Placed...</string>
+    <string name="verifying">Verifying</string>
+    <string name="otp_notice">OTP has been sent to your number.Please Sit back and relax while we verify Your Number.</string>
+    <string name="refer"><![CDATA[Refer & Earn]]></string>
+    <string name="hide_text">APPLIED</string>
+    <string name="show_text">APPLY</string>
+    <string name="wallet">Wallet</string>
+    <string name="money">Wallet Points</string>
+    <string name="share_using">Share Via</string>
+    <string name="token">token</string>
+    <string name="contac_us">Contact Us</string>
+    <string name="about_us">About Us</string>
+</resources>

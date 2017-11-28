@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/order_details"
+            android:checked="false"
+            android:icon="@drawable/order_details"
+            android:title="Order Details" />
+
+
+        <item
+            android:id="@+id/wallet"
+            android:checked="false"
+            android:icon="@drawable/wallet"
+            android:title="@string/wallet" />
+
+        <!-- <item
+             android:id="@+id/referandearn"
+             android:checked="false"
+             android:icon="@drawable/earn"
+             android:title="@string/refer" />-->
+
+        <!--<item
+            android:id="@+id/contact_us"
+            android:checked="false"
+            android:icon="@drawable/wallet"
+            android:title="@string/contac_us" />
+
+        <item
+            android:id="@+id/about_us"
+            android:checked="false"
+            android:icon="@drawable/wallet"
+            android:title="@string/about_us" />-->
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:icon="@drawable/backburger"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

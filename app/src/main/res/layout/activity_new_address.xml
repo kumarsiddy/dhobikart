@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_address"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcart"
+    tools:context=".activity.NewAddress">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/newaddressback"
+            android:padding="5dp">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:indicatorColor="@color/colorPrimary"
+                app:indicatorName="LineScalePulseOutIndicator" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name*" />
+
+            <TextView
+                android:id="@+id/nameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:text="@string/error"
+                android:textColor="@color/red"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameError"
+                android:layout_marginTop="15dp"
+                android:hint="Phone Number*"
+                android:inputType="number|phone"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/phoneError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:text="@string/error"
+                android:textColor="@color/red"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneError"
+                android:layout_marginTop="15dp"
+                android:hint="Pincode*"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_marginTop="15dp"
+                android:hint="City*"
+                android:maxLines="1" />
+
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/city"
+                android:layout_marginTop="15dp"
+                android:hint="West Bengal"
+                android:maxLines="1"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state"
+                android:layout_marginTop="15dp"
+                android:gravity="left"
+                android:hint="Area"
+                android:maxLength="80"
+                android:minLines="2" />
+
+            <TextView
+                android:id="@+id/areaError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/area"
+                android:text="@string/error"
+                android:textColor="@color/red"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaError"
+                android:layout_marginTop="15dp"
+                android:hint="Landmark (Optional)"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/alternatephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/landmark"
+                android:layout_marginTop="15dp"
+                android:hint="Alternate Phone No. (Optional)"
+                android:inputType="number|phone"
+                android:maxLength="10"
+                android:maxLines="1" />
+
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alternatephone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cartbutton"
+                android:text="SAVE"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alternatephone"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alternatephone"
+                    android:layout_gravity="center"
+                    android:layout_marginRight=".5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/addressbutton"
+                    android:text="UPDATE"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alternatephone"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft=".5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/removebutton"
+                    android:text="REMOVE"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1049520479739",
+    "firebase_url": "https://dhobi-cart.firebaseio.com",
+    "project_id": "dhobi-cart",
+    "storage_bucket": "dhobi-cart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049520479739:android:b09bbdeeb213e8ac",
+        "android_client_info": {
+          "package_name": "freaky.devs.dhobicart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049520479739-4apcn33s53ghvb3ak0t8knmes4hern1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZzlQew9QACY6KBXRyf7GG8PPAeKORE_Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

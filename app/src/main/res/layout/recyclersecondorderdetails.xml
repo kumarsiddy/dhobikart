@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/clothname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstdivider"
+        android:text="Cloth Name"
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstdivider"
+        android:layout_toLeftOf="@+id/number"
+        android:text="No. "
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/firstdivider"
+        android:layout_marginRight="3dp"
+        android:text="0"
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnumber"
+        android:text="Price"
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/rupee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textnumber"
+        android:layout_toLeftOf="@+id/price"
+        android:text="₹ "
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/number"
+        android:layout_marginRight="3dp"
+        android:text="00"
+        android:textColor="@color/grey_ivory5"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
